@@ -58,8 +58,10 @@
 
 	<ItemGroup>
 	  <None Remove="Drawables\" />
+	  <None Remove="Views\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Drawables\" />
+	  <Folder Include="Views\" />
 	</ItemGroup>
 </Project>

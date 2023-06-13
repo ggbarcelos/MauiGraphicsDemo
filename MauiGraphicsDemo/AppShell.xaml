@@ -3,13 +3,33 @@
     x:Class="MauiGraphicsDemo.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:MauiGraphicsDemo.Views"
     xmlns:local="clr-namespace:MauiGraphicsDemo"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
+    <ShellContent
+        Title="Desenhar uma linha"
+        ContentTemplate="{DataTemplate views:LinePage}"
+        Route="LinePage" />
+    <ShellContent
+        Title="Desenhar uma elipse"
+        ContentTemplate="{DataTemplate views:EllipsePage}"
+        Route="ElipsePage" />
+    <ShellContent
+        Title="Desenhar um retângulo"
+        ContentTemplate="{DataTemplate views:RetaglePage}"
+        Route="RetanglePage" />
+    <ShellContent
+        Title="Desenhar com Path"
+        ContentTemplate="{DataTemplate views:PathPage}"
+        Route="PathPage" />
+    <ShellContent
+        Title="Desenho a mão livre"
+        ContentTemplate="{DataTemplate views:DrawingPage}"
+        Route="DrawingPage" />
 </Shell>
 

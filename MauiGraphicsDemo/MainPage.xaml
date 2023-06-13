@@ -1,22 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:drawables="clr-namespace:MauiGraphicsDemo.Drawables"
              x:Class="MauiGraphicsDemo.MainPage">
-
-    <!--<ContentPage.Resources>
-        <drawables:GraphicsDrawable x:Key="graphicsDrawable"/>
-    </ContentPage.Resources>
-
-    <GraphicsView Drawable="{StaticResource graphicsDrawable}"
-                  x:Name="GraphicsGraphicsView">
-    </GraphicsView>-->
-
-     <VerticalStackLayout>
-        <drawables:SignatureView 
-                      HeightRequest="500"
-                      WidthRequest="500" />
+    <VerticalStackLayout Margin="20, 20, 0, 0" Spacing="20">
+         <Label Text="Exemplos de uso do GraphicsDrawable" FontSize="20" FontAttributes="Bold"/>
+         <Label Text="Desenhar uma linha" FontSize="20" FontAttributes="Bold" TextColor="Red"/>
+         <Label Text="Desenhar uma elipse" FontSize="20" FontAttributes="Bold" TextColor="Red"/>
+         <Label Text="Desenhar um retângulo" FontSize="20" FontAttributes="Bold" TextColor="Red"/>
+         <Label Text="Desenhar com objeto Path" FontSize="20" FontAttributes="Bold" TextColor="Red"/>
+         <Label Text="Desenhar a mão livre" FontSize="20" FontAttributes="Bold" TextColor="Red"/>
     </VerticalStackLayout>
-    
 </ContentPage>
 
