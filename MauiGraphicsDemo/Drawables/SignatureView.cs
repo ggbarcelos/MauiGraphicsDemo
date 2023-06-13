@@ -15,8 +15,7 @@ public class SignatureView : GraphicsView
     private void SignatureView_EndInteraction(object sender, TouchEventArgs e)
     {
         // Clear signature touch points. 
-        //graphicsDrawable.DragPoints.Clear();
-        this.Invalidate();
+        graphicsDrawable.DragPoints.Clear();
     }
 
     private void SignatureView_DragInteraction(object sender, TouchEventArgs e)
